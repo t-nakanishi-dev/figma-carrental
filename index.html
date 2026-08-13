@@ -1,24 +1,44 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Car Rental</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 <body>
   <header class="header">
     <div class="container">
-      <a class="header__logo" href="index.html">
-        <img src="images/logo.svg" alt="Car Rental" />
-        <span>Car Rental</span>
-      </a>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="/vehicles.html">Vehicles</a></li>
-          <li><a href="/details.html">Details</a></li>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="header__phone">
-        <img src="images/phone.svg" alt="Phone Number" />
-        <div class="header__phone-info">
-          <p>Need help?</p>
-          <a href="tel:+9962471680"> +996 247-1680 </a>
+      <div class="header__wrapper">
+        <a class="page__logo" href="index.html">
+          <img src="images/logo.svg" alt="" />
+          <span>Car Rental</span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <img src="images/phone.svg" alt="" />
+          <div class="header__phone-info">
+            <p>Need help?</p>
+            <a href="tel:+9962471680"> +996 247-1680 </a>
+          </div>
         </div>
       </div>
     </div>
@@ -28,70 +48,107 @@
     <section class="hero">
       <div class="container">
         <div class="hero__inner">
-          <div class="hero__content">
-            <h1 class="hero__title">Experience the road like never before</h1>
-            <p class="hero__description">
-              Aliquam adipiscing velit semper morbi. Purus non eu cursus
-              porttitor tristique et gravida. Quis nunc interdum gravida
-              ullamcorper
-            </p>
-            <a href="vehicles.html" class="btn btn--primary hero__button">
-              View all cars
-            </a>
-          </div>
+          <div class="hero__body">
+            <div class="hero__content">
+              <div class="hero__text">
+                <h1 class="hero__title">
+                  Experience the road like never before
+                </h1>
+                <p class="hero__description">
+                  Aliquam adipiscing velit semper morbi. Purus non eu cursus
+                  porttitor tristique et gravida. Quis nunc interdum gravida
+                  ullamcorper
+                </p>
+              </div>
+              <a href="vehicles.html" class="btn btn--primary hero__button">
+                View all cars
+              </a>
+            </div>
 
-          <div class="hero__booking">
-            <div class="booking-card">
-              <form class="booking-form" action="">
-                <h2 class="booking-form__title">Book your car</h2>
-                <div class="form-group">
-                  <label for="car-type">Car Type</label>
-                  <select id="car-type" name="car-type">
-                    <option value="">Select a car type</option>
-                    <option value="sedan">Sedan</option>
-                    <option value="suv">SUV</option>
-                    <option value="sports">Sports</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="pickup-location">Place of Rental</label>
-
-                  <select id="pickup-location" name="pickup-location">
-                    <option value="">Select pickup location</option>
-                    <option value="tokyo">Tokyo Station</option>
-                    <option value="shinjuku">Shinjuku</option>
-                    <option value="shibuya">Shibuya</option>
-                    <option value="haneda">Haneda Airport</option>
-                    <option value="narita">Narita Airport</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="return-location">Place of Return</label>
-
-                  <select id="return-location" name="return-location">
-                    <option value="">Select return location</option>
-                    <option value="tokyo">Tokyo Station</option>
-                    <option value="shinjuku">Shinjuku</option>
-                    <option value="shibuya">Shibuya</option>
-                    <option value="haneda">Haneda Airport</option>
-                    <option value="narita">Narita Airport</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="rental-date">Rental Date</label>
-                  <input type="date" id="rental-date" name="rental-date" />
-                </div>
-                <div class="form-group">
-                  <label for="return-date">Return date</label>
-                  <input type="date" id="return-date" name="return-date" />
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn--primary booking-form__button"
-                >
-                  Book Now
-                </button>
-              </form>
+            <div class="hero__booking">
+              <div class="booking-card">
+                <form class="booking-form" action="">
+                  <h2 class="booking-form__title">Book your car</h2>
+                  <div class="booking-form__body">
+                    <div class="booking-form__fields">
+                      <div class="form-group">
+                        <label for="car-type">Car Type</label>
+                        <div class="select-wrapper">
+                          <select id="car-type" name="car-type">
+                            <option value="">Car Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="sports">Sports</option>
+                          </select>
+                          <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            class="select-arrow"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="pickup-location">Place of Rental</label>
+                        <div class="select-wrapper">
+                          <select id="pickup-location" name="pickup-location">
+                            <option value="">Place of Rental</option>
+                            <option value="tokyo">Tokyo Station</option>
+                            <option value="shinjuku">Shinjuku</option>
+                            <option value="shibuya">Shibuya</option>
+                            <option value="haneda">Haneda Airport</option>
+                            <option value="narita">Narita Airport</option>
+                          </select>
+                          <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            class="select-arrow"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="return-location">Place of Return</label>
+                        <div class="select-wrapper">
+                          <select id="return-location" name="return-location">
+                            <option value="">Place of Return</option>
+                            <option value="tokyo">Tokyo Station</option>
+                            <option value="shinjuku">Shinjuku</option>
+                            <option value="shibuya">Shibuya</option>
+                            <option value="haneda">Haneda Airport</option>
+                            <option value="narita">Narita Airport</option>
+                          </select>
+                          <img
+                            src="images/arrow-down.svg"
+                            alt=""
+                            class="select-arrow"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="rental-date">Rental Date</label>
+                        <input
+                          type="date"
+                          id="rental-date"
+                          name="rental-date"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="return-date">Return date</label>
+                        <input
+                          type="date"
+                          id="return-date"
+                          name="return-date"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn--primary booking-form__button"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -102,28 +159,34 @@
       <div class="container">
         <div class="features__inner">
           <article class="feature-card">
-            <img
-              class="feature-card__icon"
-              src="images/availability.svg"
-              alt=""
-            />
-            <h3 class="feature-card__title">Availability</h3>
+            <div class="feature-card__header">
+              <img
+                class="feature-card__icon"
+                src="images/availability.svg"
+                alt=""
+              />
+              <h3 class="feature-card__title">Availability</h3>
+            </div>
             <p class="feature-card__description">
               Diam tincidunt tincidunt erat at semper fermentum. Id ultricies
               quis
             </p>
           </article>
           <article class="feature-card">
-            <img class="feature-card__icon" src="images/comfort.svg" alt="" />
-            <h3 class="feature-card__title">Comfort</h3>
+            <div class="feature-card__header">
+              <img class="feature-card__icon" src="images/comfort.svg" alt="" />
+              <h3 class="feature-card__title">Comfort</h3>
+            </div>
             <p class="feature-card__description">
               Gravida auctor fermentum morbi vulputate ac egestas orcietium
               convallis
             </p>
           </article>
           <article class="feature-card">
-            <img class="feature-card__icon" src="images/savings.svg" alt="" />
-            <h3 class="feature-card__title">Savings</h3>
+            <div class="feature-card__header">
+              <img class="feature-card__icon" src="images/savings.svg" alt="" />
+              <h3 class="feature-card__title">Savings</h3>
+            </div>
             <p class="feature-card__description">
               Pretium convallis id diam sed commodo vestibulum lobortis volutpat
             </p>
@@ -132,25 +195,606 @@
       </div>
     </section>
 
-    <section class="about-feature">image content</section>
+    <section class="about-feature">
+      <div class="container">
+        <div class="about-feature__inner">
+          <div class="about-feature__image">
+            <img src="images/about-car.webp" alt="" />
+          </div>
+
+          <ul class="about-feature__list">
+            <li class="about-feature__item">
+              <article class="about-item">
+                <div class="about-item__header">
+                  <span class="about-item__number">1</span>
+                  <h3 class="about-item__title">Erat at semper</h3>
+                </div>
+                <p class="about-item__description">
+                  Non amet fermentum est in enim at sit ullamcorper. Sit
+                  elementum rhoncus nullam feugiat. Risus sem fermentum
+                </p>
+              </article>
+            </li>
+            <li class="about-feature__item">
+              <article class="about-item">
+                <div class="about-item__header">
+                  <span class="about-item__number">2</span>
+
+                  <h3 class="about-item__title">
+                    Urna nec vivamus risus duis arcu
+                  </h3>
+                </div>
+                <p class="about-item__description">
+                  Aliquam adipiscing velit semper morbi. Purus non eu cursus
+                  porttitor tristique et gravida. Quis nunc interdum gravida
+                  ullamcorper
+                </p>
+              </article>
+            </li>
+
+            <li class="about-feature__item">
+              <article class="about-item">
+                <div class="about-item__header">
+                  <span class="about-item__number">3</span>
+
+                  <h3 class="about-item__title">
+                    Lobortis euismod imperdiet tempus
+                  </h3>
+                </div>
+                <p class="about-item__description">
+                  Viverra scelerisque mauris et nullam molestie et. Augue
+                  adipiscing praesent nisl cras nunc luctus viverra nisi
+                </p>
+              </article>
+            </li>
+
+            <li class="about-feature__item">
+              <article class="about-item">
+                <div class="about-item__header">
+                  <span class="about-item__number">4</span>
+
+                  <h3 class="about-item__title">
+                    Cras nulla aliquet nam eleifend amet et
+                  </h3>
+                </div>
+                <p class="about-item__description">
+                  Aliquam adipiscing velit semper morbi. Purus non eu cursus
+                  porttitor tristique et gravida. Quis nunc interdum gravida
+                  ullamcorper sed integer. Quisque eleifend tincidunt vulputate
+                  libero
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section class="vehicle-list">
-      <div class="vehicle-card">画像 車名 価格 情報 ボタン</div>
+      <div class="container">
+        <div class="vehicle-list__inner">
+          <div class="vehicle-list__header">
+            <h2 class="vehicle-list__heading">Choose the car that suits you</h2>
+            <a href="vehicles.html" class="vehicle-list__link">
+              <span>View All</span>
+              <img src="images/arrow-right.svg" alt="" />
+            </a>
+          </div>
+          <ul class="vehicle-list__items">
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/mercedes-sedan.webp"
+                    alt="Mercedes Sedan"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Mercedes</h3>
+                      <p class="vehicle-card__type">Sedan</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$25</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
 
-      <div class="vehicle-card">画像 車名 価格 情報 ボタン</div>
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
 
-      <div class="vehicle-card">画像 車名 価格 情報 ボタン</div>
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/mercedes-sport.webp"
+                    alt="Mercedes Sport"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Mercedes</h3>
+                      <p class="vehicle-card__type">Sport</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$50</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/mercedes-sedan.webp"
+                    alt="Mercedes Sedan"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Mercedes</h3>
+                      <p class="vehicle-card__type">Sedan</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$45</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/porsche-suv.webp"
+                    alt="Porsche Suv"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Porsche</h3>
+                      <p class="vehicle-card__type">SUV</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$40</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/toyota-sedan.webp"
+                    alt="Toyota Sedan"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Toyota</h3>
+                      <p class="vehicle-card__type">Sedan</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$35</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="vehicle-card">
+                <div class="vehicle-card__image">
+                  <img
+                    src="images/vehicles/porsche-suv.webp"
+                    alt="Porsche Suv"
+                  />
+                </div>
+                <div class="vehicle-card__text">
+                  <div class="vehicle-card__header">
+                    <div class="vehicle-card__name">
+                      <h3 class="vehicle-card__title">Porsche</h3>
+                      <p class="vehicle-card__type">SUV</p>
+                    </div>
+                    <p class="vehicle-card__price">
+                      <span class="vehicle-card__price-value">$50</span>
+                      <span class="vehicle-card__price-unit">per day</span>
+                    </p>
+                  </div>
+                  <div class="vehicle-card__info">
+                    <div class="vehicle-card__feature">
+                      <img src="images/automat.svg" alt="" />
+                      <span>Automat</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/PB-95.svg" alt="" />
+                      <span>PB 95</span>
+                    </div>
+
+                    <div class="vehicle-card__feature">
+                      <img src="images/air-conditioner.svg" alt="" />
+                      <span>Air Conditioner</span>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn--secondary vehicle-card__link-button" href="">
+                  View Details
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="statistics-banner">
-      Facts In Numbers statistic-card statistic-card statistic-card
-      statistic-card
+      <div class="container">
+        <div class="statistics-banner__inner">
+          <div class="statistics-banner__header">
+            <h1 class="statistics-banner__title">Facts In Numbers</h1>
+            <p class="statistics-banner__description">
+              Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
+              bibendum ullamcorper in. Diam tincidunt tincidunt erat at semper
+              fermentum
+            </p>
+          </div>
+          <div class="statistics-banner__items">
+            <article class="statistics-card">
+              <div class="statistics-card__icon-wrapper">
+                <img
+                  class="statistics-card__icon"
+                  src="images/statistics-cars.svg"
+                  alt=""
+                />
+              </div>
+              <div class="statistics-card__info">
+                <h3 class="statistics-card__number">540+</h3>
+                <p class="statistics-card__unit">Cars</p>
+              </div>
+            </article>
+
+            <article class="statistics-card">
+              <div class="statistics-card__icon-wrapper">
+                <img
+                  class="statistics-card__icon"
+                  src="images/statistics-customers.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="statistics-card__info">
+                <h3 class="statistics-card__number">20k+</h3>
+                <p class="statistics-card__unit">customers</p>
+              </div>
+            </article>
+            <article class="statistics-card">
+              <div class="statistics-card__icon-wrapper">
+                <img
+                  class="statistics-card__icon"
+                  src="images/statistics-years.svg"
+                  alt=""
+                />
+              </div>
+              <div class="statistics-card__info">
+                <h3 class="statistics-card__number">25+</h3>
+                <p class="statistics-card__unit">Years</p>
+              </div>
+            </article>
+            <article class="statistics-card">
+              <div class="statistics-card__icon-wrapper">
+                <img
+                  class="statistics-card__icon"
+                  src="images/statistics-miles.svg"
+                  alt=""
+                />
+              </div>
+              <div class="statistics-card__info">
+                <h3 class="statistics-card__number">20m+</h3>
+                <p class="statistics-card__unit">Miles</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="mobile-app">左 文章 ボタン 右 画像</section>
+    <section class="mobile-app">
+      <div class="container">
+        <div class="mobile-app__inner">
+          <div class="mobile-app__content">
+            <h2 class="mobile-app__title">Download mobile app</h2>
+            <p class="mobile-app__description">
+              Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor
+              cursus turpis nibh placerat massa. Fermentum urna ut at et in.
+              Turpis aliquet cras hendrerit enim condimentum. Condimentum
+              interdum risus bibendum urna
+            </p>
 
-    <section class="cta-banner">Call To Action</section>
+            <div class="mobile-app__links">
+              <a class="mobile-app__link" href="#">
+                <img
+                  class="mobile-app__badge"
+                  src="images/app-store-badge.svg"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <a class="mobile-app__link" href="#">
+                <img
+                  class="mobile-app__badge"
+                  src="images/google-play-badge.svg"
+                  alt="Get it on Google Play"
+                />
+              </a>
+            </div>
+          </div>
+          <img class="mobile-app__image" src="images/mobile-app.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <div class="cta-banner__content">
+            <h2 class="cta-banner__title">
+              Enjoy every mile with adorable companionship.
+            </h2>
+            <p class="cta-banner__description">
+              Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
+              bibendum ullamcorper in. Diam tincidunt tincidunt erat
+            </p>
+            <form class="cta-banner__form">
+              <label class="sr-only" for="city"> City </label>
+              <input
+                id="city"
+                class="cta-banner__input"
+                type="text"
+                placeholder="City"
+              />
+              <button class="btn btn--primary cta-banner__button" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <img class="cta-banner__image" src="images/cta-banner.png" alt="" />
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>4カラム</footer>
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <div class="footer-guide">
+            <a class="page__logo" href="index.html">
+              <img src="images/logo.svg" alt="" />
+              <span>Car Rental</span>
+            </a>
+
+            <div class="footer-guide__item">
+              <a
+                class="footer-guide__link"
+                href="https://www.google.com/maps/search/?api=1&query=Oxford+Ave.+Cary,+NC+27511"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-address.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-guide__content">
+                  <p class="footer-guide__title">Address</p>
+                  <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
+                </div>
+              </a>
+            </div>
+            <div class="footer-guide__item">
+              <a class="footer-guide__link" href="mailto:nwiger@yahoo.com">
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-email.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-guide__content">
+                  <p class="footer-guide__title">Email</p>
+                  <p class="footer-guide__info">nwiger@yahoo.com</p>
+                </div>
+              </a>
+            </div>
+            <div class="footer-guide__item">
+              <a class="footer-guide__link" href="tel:+5375476401">
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-phone.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-guide__content">
+                  <p class="footer-guide__title">Phone</p>
+                  <p class="footer-guide__info">+537 547-6401</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <div class="footer-info__social">
+              <h3 class="footer-info__message">
+                Faucibus faucibus pellentesque dictum turpis. Id pellentesque
+                turpis massa a id iaculis lorem tur
+              </h3>
+              <div class="footer-info__sns">
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-facebook.svg" alt="Facebook" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-instagram.svg" alt="Instagram" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-x.svg" alt="X" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-youtube.svg" alt="Youtube" />
+                </a>
+              </div>
+            </div>
+
+            <article class="footer-info__items">
+              <h3 class="footer-info__title">Useful links</h3>
+              <ul class="footer-info__links">
+                <li><a class="footer-info__link" href="">About us</a></li>
+                <li><a class="footer-info__link" href="">Contact us</a></li>
+                <li><a class="footer-info__link" href="">Gallery</a></li>
+                <li><a class="footer-info__link" href="">Blog</a></li>
+                <li><a class="footer-info__link" href="">F.A.Q</a></li>
+              </ul>
+            </article>
+            <article class="footer-info__items">
+              <h3 class="footer-info__title">Vehicles</h3>
+              <ul class="footer-info__links">
+                <li><a class="footer-info__link" href="">Sedan</a></li>
+                <li><a class="footer-info__link" href="">Cabriolet</a></li>
+                <li><a class="footer-info__link" href="">Pickup</a></li>
+                <li><a class="footer-info__link" href="">Minivan</a></li>
+                <li><a class="footer-info__link" href="">SUV</a></li>
+              </ul>
+            </article>
+            <article class="footer-info__items">
+              <h3 class="footer-info__title">Download App</h3>
+              <div class="footer-info__apps">
+                <a class="footer-info__app" href="#">
+                  <img
+                    class="footer-info__badge"
+                    src="images/app-store-badge.svg"
+                    alt="Download on the App Store"
+                  />
+                </a>
+                <a class="footer-info__app" href="#">
+                  <img
+                    class="footer-info__badge"
+                    src="images/google-play-badge.svg"
+                    alt="Get it on Google Play"
+                  />
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <small class="footer__copyright">
+          © Copyright Car Rental 2024. Design by Figma. guru
+        </small>
+      </div>
+    </div>
+  </footer>
 </body>
