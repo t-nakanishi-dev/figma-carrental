@@ -47,7 +47,7 @@
 }
 .header__nav-list {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 .header__nav-list a {
   font-size: 18px;
@@ -79,12 +79,170 @@
 }
 /* footer */
 .footer {
+  padding-block: var(--section-padding-md) 40px;
 }
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.footer-guide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-guide__item {
+  display: flex;
+  gap: 12px;
+}
+.footer-guide__icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.footer-guide__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-guide__link:hover {
+  opacity: 0.8;
+}
+.footer-guide__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--white-color);
+}
+.footer-guide__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-guide__info {
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+}
+.footer-info__sns {
+  display: flex;
+  gap: 20px;
+}
+.footer-info__logo {
+  width: 24px;
+  height: 24px;
+}
+.footer-info__items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer-info__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+.footer-info__links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 1;
+}
+.footer-info__link {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-info__apps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* .vehicle-card */
 .vehicle-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 24px;
+  background-color: #fafafa;
+  border-radius: 20px;
 }
-.booking-card {
+.vehicle-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.category-button {
+.vehicle-card__header {
+  display: flex;
+  justify-content: space-between;
 }
+.vehicle-card__name {
+  display: flex;
+  flex-direction: column;
+}
+.vehicle-card__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.vehicle-card__type {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.vehicle-card__price {
+  display: flex;
+  flex-direction: column;
+}
+.vehicle-card__price-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--purple-color);
+}
+.vehicle-card__price-unit {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.vehicle-card__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+.vehicle-card__feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.vehicle-card__link-button {
+  height: 50px;
+}
+/* brand-list */
 .brand-list {
 }

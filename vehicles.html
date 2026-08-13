@@ -19,24 +19,26 @@
 <body>
   <header class="header">
     <div class="container">
-      <a class="header__logo" href="index.html">
-        <img src="images/logo.svg" alt="Car Rental" />
-        <span>Car Rental</span>
-      </a>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="vehicles.html">Vehicles</a></li>
-          <li><a href="details.html">Details</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="header__phone">
-        <img src="images/phone.svg" alt="Phone Number" />
-        <div class="header__phone-info">
-          <p>Need help?</p>
-          <a href="tel:+9962471680"> +996 247-1680 </a>
+      <div class="header__wrapper">
+        <a class="page__logo" href="index.html">
+          <img src="images/logo.svg" alt="" />
+          <span>Car Rental</span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <img src="images/phone.svg" alt="" />
+          <div class="header__phone-info">
+            <p>Need help?</p>
+            <a href="tel:+9962471680"> +996 247-1680 </a>
+          </div>
         </div>
       </div>
     </div>
@@ -45,48 +47,66 @@
   <main>
     <section class="vehicle-hero">
       <div class="container">
-        <h1 class="vehicle-hero__title">Select a vehicle group</h1>
+        <div class="vehicle-hero__inner">
+          <h1 class="vehicle-hero__title">Select a vehicle group</h1>
 
-        <ul class="vehicle-filter">
-          <li class="vehicle-filter__item">
-            <button
-              class="vehicle-filter__link vehicle-filter__link--active"
-              type="button"
-            >
-              <span class="vehicle-filter__text">All vehicles</span>
-            </button>
-          </li>
-          <li class="vehicle-filter__item">
-            <button class="vehicle-filter__link" type="button">
-              <img class="vehicle-filter__icon" src="..." alt="" />
-              <span class="vehicle-filter__text">Sedan</span>
-            </button>
-          </li>
-          <li class="vehicle-filter__item">
-            <button class="vehicle-filter__link" type="button">
-              <img class="vehicle-filter__icon" src="..." alt="" />
-              <span class="vehicle-filter__text">Cabriolet</span>
-            </button>
-          </li>
-          <li class="vehicle-filter__item">
-            <button class="vehicle-filter__link" type="button">
-              <img class="vehicle-filter__icon" src="..." alt="" />
-              <span class="vehicle-filter__text">Pickup</span>
-            </button>
-          </li>
-          <li class="vehicle-filter__item">
-            <button class="vehicle-filter__link" type="button">
-              <img class="vehicle-filter__icon" src="..." alt="" />
-              <span class="vehicle-filter__text">Suv</span>
-            </button>
-          </li>
-          <li class="vehicle-filter__item">
-            <button class="vehicle-filter__link" type="button">
-              <img class="vehicle-filter__icon" src="..." alt="" />
-              <span class="vehicle-filter__text">Minivan</span>
-            </button>
-          </li>
-        </ul>
+          <ul class="vehicle-filter">
+            <li class="vehicle-filter__item">
+              <button
+                class="vehicle-filter__link vehicle-filter__link--active"
+                type="button"
+              >
+                <span class="vehicle-filter__text">All vehicles</span>
+              </button>
+            </li>
+            <li class="vehicle-filter__item">
+              <button class="vehicle-filter__link" type="button">
+                <img
+                  class="vehicle-filter__icon"
+                  src="images/sedan.svg"
+                  alt=""
+                />
+                <span class="vehicle-filter__text">Sedan</span>
+              </button>
+            </li>
+            <li class="vehicle-filter__item">
+              <button class="vehicle-filter__link" type="button">
+                <img
+                  class="vehicle-filter__icon"
+                  src="images/cabriolet.svg"
+                  alt=""
+                />
+                <span class="vehicle-filter__text">Cabriolet</span>
+              </button>
+            </li>
+            <li class="vehicle-filter__item">
+              <button class="vehicle-filter__link" type="button">
+                <img
+                  class="vehicle-filter__icon"
+                  src="images/pickup.svg"
+                  alt=""
+                />
+                <span class="vehicle-filter__text">Pickup</span>
+              </button>
+            </li>
+            <li class="vehicle-filter__item">
+              <button class="vehicle-filter__link" type="button">
+                <img class="vehicle-filter__icon" src="images/suv.svg" alt="" />
+                <span class="vehicle-filter__text">Suv</span>
+              </button>
+            </li>
+            <li class="vehicle-filter__item">
+              <button class="vehicle-filter__link" type="button">
+                <img
+                  class="vehicle-filter__icon"
+                  src="images/minivan.svg"
+                  alt=""
+                />
+                <span class="vehicle-filter__text">Minivan</span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -129,7 +149,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -170,7 +190,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -211,7 +231,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -249,7 +269,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -290,7 +310,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -328,7 +348,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -369,7 +389,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -410,7 +430,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -451,7 +471,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn--secondary vehicle-card__link" href="">
+              <a class="btn btn--secondary vehicle-card__link-button" href="">
                 View Details
               </a>
             </article>
@@ -461,100 +481,114 @@
     </section>
     <section class="partners">
       <div class="container">
-        <ul class="partners__list">
-          <li class="partners__item">
-            <img src="images/partner-toyota.svg" alt="Toyota" />
-          </li>
-          <li class="partners__item">
-            <img src="images/partner-ford.svg" alt="Ford" />
-          </li>
-          <li class="partners__item">
-            <img src="images/partner-mercedes.svg" alt="Mercedes-Benz" />
-          </li>
-          <li class="partners__item">
-            <img src="images/partner-jeep.svg" alt="Jeep" />
-          </li>
-          <li class="partners__item">
-            <img src="images/partner-bmw.svg" alt="BMW" />
-          </li>
-          <li class="partners__item">
-            <img src="images/partner-audi.svg" alt="Audi" />
-          </li>
-        </ul>
+        <div class="partners__inner">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="images/partner-toyota.svg" alt="Toyota" />
+            </li>
+            <li class="partners__item">
+              <img src="images/partner-ford.svg" alt="Ford" />
+            </li>
+            <li class="partners__item">
+              <img src="images/partner-mercedes.svg" alt="Mercedes-Benz" />
+            </li>
+            <li class="partners__item">
+              <img src="images/partner-jeep.svg" alt="Jeep" />
+            </li>
+            <li class="partners__item">
+              <img src="images/partner-bmw.svg" alt="BMW" />
+            </li>
+            <li class="partners__item">
+              <img src="images/partner-audi.svg" alt="Audi" />
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer-guide">
-          <a class="footer-guide__logo" href="index.html">
-            <img src="images/logo.svg" alt="Car Rental" />
-            <span>Car Rental</span>
-          </a>
-          <ul class="footer-guide__list">
-            <li class="footer-guide__item">
-              <img
-                class="footer-guide__icon"
-                src="images/footer-guide-address.svg"
-                alt=""
-              />
+        <div class="footer__content">
+          <div class="footer-guide">
+            <a class="page__logo" href="index.html">
+              <img src="images/logo.svg" alt="" />
+              <span>Car Rental</span>
+            </a>
 
-              <div class="footer-guide__content">
-                <p class="footer-guide__title">Address</p>
-                <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
-              </div>
-            </li>
-            <li class="footer-guide__item">
+            <div class="footer-guide__item">
+              <a
+                class="footer-guide__link"
+                href="https://www.google.com/maps/search/?api=1&query=Oxford+Ave.+Cary,+NC+27511"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-address.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-guide__content">
+                  <p class="footer-guide__title">Address</p>
+                  <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
+                </div>
+              </a>
+            </div>
+            <div class="footer-guide__item">
               <a class="footer-guide__link" href="mailto:nwiger@yahoo.com">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-email.svg"
-                  alt=""
-                />
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-email.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="footer-guide__content">
                   <p class="footer-guide__title">Email</p>
                   <p class="footer-guide__info">nwiger@yahoo.com</p>
                 </div>
               </a>
-            </li>
-            <li class="footer-guide__item">
+            </div>
+            <div class="footer-guide__item">
               <a class="footer-guide__link" href="tel:+5375476401">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-phone.svg"
-                  alt=""
-                />
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-phone.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="footer-guide__content">
                   <p class="footer-guide__title">Phone</p>
                   <p class="footer-guide__info">+537 547-6401</p>
                 </div>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-info">
-          <div class="footer-info__social">
-            <h3 class="footer-info__message">
-              Faucibus faucibus pellentesque dictum turpis. Id pellentesque
-              turpis massa a id iaculis lorem tur
-            </h3>
-            <div class="footer-info__sns">
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-facebook.svg" alt="Facebook" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-instagram.svg" alt="Instagram" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-x.svg" alt="X" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-youtube.svg" alt="Youtube" />
-              </a>
             </div>
           </div>
-          <div class="footer-info__other">
+          <div class="footer-info">
+            <div class="footer-info__social">
+              <h3 class="footer-info__message">
+                Faucibus faucibus pellentesque dictum turpis. Id pellentesque
+                turpis massa a id iaculis lorem tur
+              </h3>
+              <div class="footer-info__sns">
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-facebook.svg" alt="Facebook" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-instagram.svg" alt="Instagram" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-x.svg" alt="X" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-youtube.svg" alt="Youtube" />
+                </a>
+              </div>
+            </div>
+
             <article class="footer-info__items">
               <h3 class="footer-info__title">Useful links</h3>
               <ul class="footer-info__links">
@@ -577,32 +611,20 @@
             </article>
             <article class="footer-info__items">
               <h3 class="footer-info__title">Download App</h3>
-              <div class="mobile-app__links">
-                <a class="mobile-app__link" href="#">
+              <div class="footer-info__apps">
+                <a class="footer-info__app" href="#">
                   <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-apple.svg"
-                    alt=""
+                    class="footer-info__badge"
+                    src="images/app-store-badge.svg"
+                    alt="Download on the App Store"
                   />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">Download on the</p>
-
-                    <p class="mobile-app__store">App Store</p>
-                  </div>
                 </a>
-                <a class="mobile-app__link" href="#">
+                <a class="footer-info__app" href="#">
                   <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-play.svg"
-                    alt=""
+                    class="footer-info__badge"
+                    src="images/google-play-badge.svg"
+                    alt="Get it on Google Play"
                   />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">GET IT ON</p>
-
-                    <p class="mobile-app__store">Google Play</p>
-                  </div>
                 </a>
               </div>
             </article>
