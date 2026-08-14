@@ -20,368 +20,486 @@
   <!-- header  -->
   <header class="header">
     <div class="container">
-      <a class="header__logo" href="index.html">
-        <img src="images/logo.svg" alt="Car Rental" />
-        <span>Car Rental</span>
-      </a>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="vehicles.html">Vehicles</a></li>
-          <li><a href="details.html">Details</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="header__phone">
-        <img src="images/phone.svg" alt="Phone Number" />
-        <div class="header__phone-info">
-          <p>Need help?</p>
-          <a href="tel:+9962471680"> +996 247-1680 </a>
+      <div class="header__wrapper">
+        <a class="page__logo" href="index.html">
+          <img src="images/logo.svg" alt="" />
+          <span>Car Rental</span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="header__phone">
+          <img src="images/phone.svg" alt="" />
+          <div class="header__phone-info">
+            <p>Need help?</p>
+            <a href="tel:+9962471680"> +996 247-1680 </a>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="about-hero">
-    <div class="container">
-      <div class="about-hero__inner">
-        <div class="about-hero__header">
-          <h1 class="about-hero__header-title">About Us</h1>
-          <p>Home /</p>
-          <p>About Us</p>
-        </div>
-        <div class="about-hero__feature-left">
-          <h2 class="about-hero__feature-title">
-            Where every drive feels extraordinary
-          </h2>
-        </div>
-        <div class="about-hero__feature-middle">
-          <h3 class="about-hero__feature-subtitle">Variety Brands</h3>
-          <p class="about-hero__feature-description">
-            Platea non auctor fermentum sollicitudin. Eget adipiscing augue sit
-            quam natoque ornare cursus viverra odio
-          </p>
-
-          <h3 class="about-hero__feature-subtitle">Maximum Freedom</h3>
-          <p class="about-hero__feature-description">
-            Diam quam gravida ultricies velit duis consequat integer. Est
-            aliquam posuere vel rhoncus massa volutpat in
-          </p>
-        </div>
-        <div class="about-hero__feature-right">
-          <h3 class="about-hero__feature-subtitle">Awesome Support</h3>
-          <p class="about-hero__feature-description">
-            Eget adipiscing augue sit quam natoque ornare cursus viverra odio.
-            Diam quam gravida ultricies velit
-          </p>
-          <h3 class="about-hero__feature-subtitle">Flexibility on the go</h3>
-          <p class="about-hero__feature-description">
-            Vitae pretium nulla sed quam id nisl semper. Vel non in proin
-            egestas dis.faucibus rhoncus. Iaculis dignissim aenean pellentesque
-            nisl
-          </p>
+  <main>
+    <!-- Page Hero (共通ヒーローセクション) -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__inner">
+          <h1 class="page-hero__title">About Us</h1>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__home"><a href="index.html">Home / </a></li>
+              <li class="breadcrumb__page" aria-current="page">About Us</li>
+            </ol>
+          </nav>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="about-video">
-    <div class="container">
-      <div class="about-video__inner">
-        <img
-          class="about-video__image"
-          src="images/about-video.jpg"
-          alt="Car rental introduction video"
-        />
+    </section>
 
-        <button class="about-video__play" type="button">
-          <img src="images/play.svg" alt="" />
-          <span class="sr-only">Play video</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <section class="about-stats">
-    <div class="container">
-      <ul class="about-stats__items">
-        <li class="about-stats__item">
-          <span class="about-stats__number">20k+</span>
-          <span class="about-stats__unit">Happy customers</span>
-        </li>
-        <li class="about-stats__item">
-          <span class="about-stats__number">540+</span>
-          <span class="about-stats__unit">Count of cars</span>
-        </li>
-        <li class="about-stats__item">
-          <span class="about-stats__number">25+</span>
-          <span class="about-stats__unit">Years of experience</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="about-info">
-    <div class="container">
-      <h2 class="about-info__title">
-        Unlock unforgettable memories on the road
-      </h2>
-      <p class="about-info__desc">
-        Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
-        tristique et gravida. Quis nunc interdum gravida ullamcorper
-      </p>
-      <ul class="about-info__items">
-        <li class="about-info__item">
-          <img src="images/check.svg" alt="" />
-          <p class="about-info__exp">
-            Velit semper morbi. Purus non eu cursus porttitor tristique et
-            gravida . Quis nunc interdum gravida ullamcorper
-          </p>
-        </li>
-        <li class="about-info__item">
-          <img src="images/check.svg" alt="" />
-          <p class="about-info__exp">
-            Purus non eu cursus porttitor tristique et gravida. Quis nunc
-            interdum
-          </p>
-        </li>
-        <li class="about-info__item">
-          <img src="images/check.svg" alt="" />
-          <p class="about-info__exp">
-            Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor
-          </p>
-        </li>
-        <li class="about-info__item">
-          <img src="images/check.svg" alt="" />
-          <p class="about-info__exp">Quis nunc interdum gravida ullamcorper</p>
-        </li>
-      </ul>
-      <img class="about-info__img" src="" alt="" />
-    </div>
-  </section>
-  <section class="mobile-app">
-    <div class="container">
-      <div class="mobile-app__inner">
-        <div class="mobile-app__content">
-          <p class="mobile-app__subtitle">Download our app</p>
-          <h2 class="mobile-app__title">Download our app</h2>
-          <p class="mobile-app__description">
-            Turpis morbi enim nisi pulvinar leo dui tellus. Faucibus egestas
-            semper diam rutrum dictumst ut donec. Nisi nisi morbi vel in
-            vulputate. Nulla nam eget urna fusce vulputate at risus
-          </p>
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__inner">
+          <div class="about-hero__body">
+            <div class="about-hero__feature-left">
+              <h2 class="about-hero__feature-title">
+                Where every drive feels extraordinary
+              </h2>
+            </div>
 
-          <div class="mobile-app__links">
-            <a class="mobile-app__link" href="#">
-              <img
-                class="mobile-app__icon"
-                src="images/mobile-app-apple.svg"
-                alt=""
-              />
+            <div class="about-hero__feature-right">
+              <div class="about-hero__feature-group">
+                <div class="about-hero__feature-item">
+                  <h3 class="about-hero__feature-subtitle">Variety Brands</h3>
+                  <p class="about-hero__feature-description">
+                    Platea non auctor fermentum sollicitudin. Eget adipiscing
+                    augue sit quam natoque ornare cursus viverra odio
+                  </p>
+                </div>
 
-              <div class="mobile-app__info">
-                <p class="mobile-app__subtitle">Download on the</p>
-
-                <p class="mobile-app__store">App Store</p>
+                <div class="about-hero__feature-item">
+                  <h3 class="about-hero__feature-subtitle">Awesome Support</h3>
+                  <p class="about-hero__feature-description">
+                    Eget adipiscing augue sit quam natoque ornare cursus viverra
+                    odio. Diam quam gravida ultricies velit
+                  </p>
+                </div>
               </div>
-            </a>
-            <a class="mobile-app__link" href="#">
-              <img
-                class="mobile-app__icon"
-                src="images/mobile-app-play.svg"
-                alt=""
-              />
 
-              <div class="mobile-app__info">
-                <p class="mobile-app__subtitle">GET IT ON</p>
+              <div class="about-hero__feature-group">
+                <div class="about-hero__feature-item">
+                  <h3 class="about-hero__feature-subtitle">Maximum Freedom</h3>
+                  <p class="about-hero__feature-description">
+                    Diam quam gravida ultricies velit duis consequat integer.
+                    Est aliquam posuere vel rhoncus massa volutpat in
+                  </p>
+                </div>
 
-                <p class="mobile-app__store">Google Play</p>
+                <div class="about-hero__feature-item">
+                  <h3 class="about-hero__feature-subtitle">
+                    Flexibility on the go
+                  </h3>
+                  <p class="about-hero__feature-description">
+                    Vitae pretium nulla sed quam id nisl semper. Vel non in
+                    proin egestas dis.faucibus rhoncus. Iaculis dignissim aenean
+                    pellentesque nisl
+                  </p>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <img class="mobile-app__image" src="images/mobile-app.png" alt="" />
       </div>
-    </div>
-  </section>
-  <section class="about-reviews">
-    <div class="container">
-      <div class="about-reviews__inner">
-        <article class="about-reviews__card">
-          <ul class="about-reviews__items">
-            <li class="about-reviews__item">
-              <span class="about-reviews__quote"></span>
-              <p class="about-reviews__desc">
-                Et aliquet netus at sapien pellentesque mollis nec dignissim
-                maecenas. Amet erat volutpat quisque odio purus feugiat. In
-                gravida neque
-              </p>
-              <img class="about-reviews__img" src="" alt="" />
-              <p class="about-reviews__companyname">Kuphal LLC</p>
-              <p class="about-reviews__name">Emanuel Boyle</p>
-            </li>
-          </ul>
-        </article>
-        <article class="about-reviews__card">
-          <ul class="about-reviews__items">
-            <li class="about-reviews__item">
-              <span class="about-reviews__quote"></span>
-              <p class="about-reviews__desc">
-                Purus consectetur varius quis urna phasellus enim mattis. Sem
-                tincidunt tortor nunc egestas amet adipiscing ligula
-              </p>
-              <img class="about-reviews__img" src="" alt="" />
-              <p class="about-reviews__companyname">Glover - Orn</p>
-              <p class="about-reviews__name">River Graves</p>
-            </li>
-          </ul>
-        </article>
-        <article class="about-reviews__card">
-          <ul class="about-reviews__items">
-            <li class="about-reviews__item">
-              <span class="about-reviews__quote"></span>
-              <p class="about-reviews__desc">
-                Quam neque odio urna euismod felis. Sit egestas magna in quisque
-                famesdapibus quis sapien magna. Nisl non eget sit pellentesque
-                tristique et
-              </p>
-              <img class="about-reviews__img" src="" alt="" />
-              <p class="about-reviews__companyname">Haag LLC</p>
-              <p class="about-reviews__name">Ryder Malone</p>
-            </li>
-          </ul>
-        </article>
+    </section>
+
+    <section class="about-video">
+      <div class="container">
+        <div class="about-video__inner">
+          <img
+            class="about-video__image"
+            src="images/about-video.webp"
+            alt="Car rental introduction video"
+          />
+
+          <button class="about-video__play" type="button">
+            <img src="images/play.svg" alt="" />
+            <span class="sr-only">Play video</span>
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="about-question">
-    <div class="container">
-      <div class="about-question__inner">
-        <h2 class="about-question__title">Top Car Rental Questions</h2>
-        <ul class="about-question__items">
-          <li class="about-question__item">
-            <h3 class="about-question__question">How does it works?</h3>
-            <p class="about-question__answer">
-              Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor
-              cursus turpis nibh placerat massa. Fermentum urna ut at et in.
-              Turpis aliquet cras hendrerit enim condimentum. Condimentum
-              interdum risus bibendum urna. Augue aliquet varius faucibus ut
-              integer tristique ut. Pellentesque id nibh sed nulla non nulla
+    </section>
+
+    <section class="about-stats">
+      <div class="container">
+        <div class="about-stats__inner">
+          <ul class="about-stats__items">
+            <li class="about-stats__item">
+              <span class="about-stats__number">20k+</span>
+              <span class="about-stats__unit">Happy customers</span>
+            </li>
+            <li class="about-stats__item">
+              <span class="about-stats__number">540+</span>
+              <span class="about-stats__unit">Count of cars</span>
+            </li>
+            <li class="about-stats__item">
+              <span class="about-stats__number">25+</span>
+              <span class="about-stats__unit">Years of experience</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-info">
+      <div class="container">
+        <div class="about-info__inner">
+          <div class="about-info__left">
+            <h2 class="about-info__title">
+              Unlock unforgettable memories on the road
+            </h2>
+            <p class="about-info__desc">
+              Aliquam adipiscing velit semper morbi. Purus non eu cursus
+              porttitor tristique et gravida. Quis nunc interdum gravida
+              ullamcorper
             </p>
-          </li>
-          <li class="about-question__item">
-            <h3 class="about-question__question">
-              Can I rent a car without a credit card?
-            </h3>
-          </li>
-          <li class="about-question__item">
-            <h3 class="about-question__question">
-              What are the requirements for renting a car?
-            </h3>
-          </li>
-          <li class="about-question__item">
-            <h3 class="about-question__question">
-              Does Car Rental allow me to tow with or attach a hitch to the
-              rental vehicle?
-            </h3>
-          </li>
-          <li class="about-question__item">
-            <h3 class="about-question__question">
-              Does Car Rental offer coverage products for purchase with my
-              rental?
-            </h3>
-          </li>
-        </ul>
+
+            <ul class="about-info__items">
+              <li class="about-info__item">
+                <img class="about-info__check" src="images/check.svg" alt="" />
+                <p class="about-info__exp">
+                  Velit semper morbi. Purus non eu cursus porttitor tristique et
+                  gravida
+                </p>
+              </li>
+              <li class="about-info__item">
+                <img class="about-info__check" src="images/check.svg" alt="" />
+                <p class="about-info__exp">
+                  Purus non eu cursus porttitor tristique et gravida. Quis nunc
+                  interdum
+                </p>
+              </li>
+              <li class="about-info__item">
+                <img class="about-info__check" src="images/check.svg" alt="" />
+                <p class="about-info__exp">
+                  Aliquam adipiscing velit semper morbi. Purus non eu cursus
+                  porttitor
+                </p>
+              </li>
+              <li class="about-info__item">
+                <img class="about-info__check" src="images/check.svg" alt="" />
+                <p class="about-info__exp">
+                  Quis nunc interdum gravida ullamcorper
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            class="about-info__img"
+            src="images/about-info.webp"
+            alt="Customer enjoying a car rental trip"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="mobile-app">
+      <div class="container">
+        <div class="mobile-app__inner">
+          <img
+            class="mobile-app__phone"
+            src="images/mobile-app.webp"
+            alt="Car Rental mobile app"
+          />
+          <div class="mobile-app__content">
+            <div class="mobile-app__text">
+              <div class="mobile-app__header">
+                <p class="mobile-app__label">DOWNLOAD OUR APP</p>
+                <h2 class="mobile-app__title">Download our app</h2>
+              </div>
+              <p class="mobile-app__desc">
+                Turpis morbi enim nisi pulvinar leo dui tellus. Faucibus egestas
+                semper diam rutrum dictumst ut donec. Nisi nisi morbi vel in
+                vulputate. Nulla nam eget urna fusce vulputate at risus
+              </p>
+            </div>
+            <div class="mobile-app__stores">
+              <a href="#"
+                ><img
+                  src="images/app-store-white.svg"
+                  alt="Download on the App Store"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/google-play-white.svg"
+                  alt="Get it on Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-reviews">
+      <div class="container">
+        <div class="about-reviews__inner">
+          <h2 class="about-reviews__title">Reviews from our customers</h2>
+          <div class="about-reviews__body">
+            <article class="about-reviews__card">
+              <div class="about-reviews__item">
+                <div class="about-reviews__content">
+                  <span class="about-reviews__quote">
+                    <img src="images/quote.svg" alt="" />
+                  </span>
+                  <p class="about-reviews__desc">
+                    Et aliquet netus at sapien pellentesque mollis nec dignissim
+                    maecenas. Amet erat volutpat quisque odio purus feugiat. In
+                    gravida neque
+                  </p>
+                </div>
+                <div class="about-reviews__customer">
+                  <img
+                    class="about-reviews__img"
+                    src="images/about-reviews-1.svg"
+                    alt=""
+                  />
+                  <p class="about-reviews__companyname">Kuphal LLC</p>
+                  <p class="about-reviews__name">Emanuel Boyle</p>
+                </div>
+              </div>
+            </article>
+            <article class="about-reviews__card">
+              <div class="about-reviews__item">
+                <div class="about-reviews__content">
+                  <span class="about-reviews__quote">
+                    <img src="images/quote.svg" alt="" />
+                  </span>
+                  <p class="about-reviews__desc">
+                    Purus consectetur varius quis urna phasellus enim mattis.
+                    Sem tincidunt tortor nunc egestas amet adipiscing ligula
+                  </p>
+                </div>
+                <div class="about-reviews__customer">
+                  <img
+                    class="about-reviews__img"
+                    src="images/about-reviews-2.svg"
+                    alt=""
+                  />
+                  <p class="about-reviews__companyname">Glover - Orn</p>
+                  <p class="about-reviews__name">River Graves</p>
+                </div>
+              </div>
+            </article>
+            <article class="about-reviews__card">
+              <div class="about-reviews__item">
+                <div class="about-reviews__content">
+                  <span class="about-reviews__quote">
+                    <img src="images/quote.svg" alt="" />
+                  </span>
+                  <p class="about-reviews__desc">
+                    Quam neque odio urna euismod felis. Sit egestas magna in
+                    quisque famesdapibus quis sapien magna. Nisl non eget sit
+                    pellentesque tristique et
+                  </p>
+                </div>
+                <div class="about-reviews__customer">
+                  <img
+                    class="about-reviews__img"
+                    src="images/about-reviews-3.svg"
+                    alt=""
+                  />
+                  <p class="about-reviews__companyname">Haag LLC</p>
+                  <p class="about-reviews__name">Ryder Malone</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-question">
+      <div class="container">
+        <div class="about-question__inner">
+          <h2 class="about-question__title">Top Car Rental Questions</h2>
+          <ul class="about-question__items">
+            <li class="about-question__item">
+              <div class="about-question__header">
+                <h3 class="about-question__question">How does it works?</h3>
+                <img
+                  class="about-question__icon"
+                  src="images/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+              <p class="about-question__answer">
+                Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor
+                cursus turpis nibh placerat massa. Fermentum urna ut at et in.
+                Turpis aliquet cras hendrerit enim condimentum. Condimentum
+                interdum risus bibendum urna. Augue aliquet varius faucibus ut
+                integer tristique ut. Pellentesque id nibh sed nulla non nulla
+              </p>
+            </li>
+            <li class="about-question__item">
+              <div class="about-question__header">
+                <h3 class="about-question__question">
+                  Can I rent a car without a credit card?
+                </h3>
+                <img
+                  class="about-question__icon"
+                  src="images/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="about-question__item">
+              <div class="about-question__header">
+                <h3 class="about-question__question">
+                  What are the requirements for renting a car?
+                </h3>
+                <img
+                  class="about-question__icon"
+                  src="images/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="about-question__item">
+              <div class="about-question__header">
+                <h3 class="about-question__question">
+                  Does Car Rental allow me to tow with or attach a hitch to the
+                  rental vehicle?
+                </h3>
+                <img
+                  class="about-question__icon"
+                  src="images/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="about-question__item">
+              <div class="about-question__header">
+                <h3 class="about-question__question">
+                  Does Car Rental offer coverage products for purchase with my
+                  rental?
+                </h3>
+                <img
+                  class="about-question__icon"
+                  src="images/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <section class="about-banner">
     <div class="container">
       <div class="about-banner__inner">
         <div class="about-banner__content">
-          <h2 class="about-banner__title">Looking for a car?</h2>
-          <h2 class="about-banner__subtitle">+537 547-6401</h2>
-          <p class="about-banner__description">
-            Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
-            bibendum ullamcorper in
-          </p>
+          <div class="about-banner__text">
+            <h2 class="about-banner__title">Looking for a car?</h2>
+            <h2 class="about-banner__subtitle">+537 547-6401</h2>
+            <p class="about-banner__description">
+              Amet cras hac orci lacus. Faucibus ipsum arcu lectus nibh sapien
+              bibendum ullamcorper in
+            </p>
+          </div>
           <a href="vehicles.html" class="btn btn--primary about-banner__button">
             Book now
           </a>
         </div>
+        <img class="about-banner__image" src="images/banner.png" alt="" />
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer-guide">
-          <a class="footer-guide__logo" href="index.html">
-            <img src="images/logo.svg" alt="Car Rental" />
-            <span>Car Rental</span>
-          </a>
-          <ul class="footer-guide__list">
-            <li class="footer-guide__item">
-              <img
-                class="footer-guide__icon"
-                src="images/footer-guide-address.svg"
-                alt=""
-              />
+        <div class="footer__content">
+          <div class="footer-guide">
+            <a class="page__logo" href="index.html">
+              <img src="images/logo.svg" alt="" />
+              <span>Car Rental</span>
+            </a>
 
-              <div class="footer-guide__content">
-                <p class="footer-guide__title">Address</p>
-                <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
-              </div>
-            </li>
-            <li class="footer-guide__item">
+            <div class="footer-guide__item">
+              <a
+                class="footer-guide__link"
+                href="https://www.google.com/maps/search/?api=1&query=Oxford+Ave.+Cary,+NC+27511"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-address.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-guide__content">
+                  <p class="footer-guide__title">Address</p>
+                  <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
+                </div>
+              </a>
+            </div>
+            <div class="footer-guide__item">
               <a class="footer-guide__link" href="mailto:nwiger@yahoo.com">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-email.svg"
-                  alt=""
-                />
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-email.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="footer-guide__content">
                   <p class="footer-guide__title">Email</p>
                   <p class="footer-guide__info">nwiger@yahoo.com</p>
                 </div>
               </a>
-            </li>
-            <li class="footer-guide__item">
+            </div>
+            <div class="footer-guide__item">
               <a class="footer-guide__link" href="tel:+5375476401">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-phone.svg"
-                  alt=""
-                />
+                <div class="footer-guide__icon-wrapper">
+                  <img
+                    class="footer-guide__icon"
+                    src="images/footer-guide-phone.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="footer-guide__content">
                   <p class="footer-guide__title">Phone</p>
                   <p class="footer-guide__info">+537 547-6401</p>
                 </div>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-info">
-          <div class="footer-info__social">
-            <h3 class="footer-info__message">
-              Faucibus faucibus pellentesque dictum turpis. Id pellentesque
-              turpis massa a id iaculis lorem tur
-            </h3>
-            <div class="footer-info__sns">
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-facebook.svg" alt="Facebook" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-instagram.svg" alt="Instagram" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-x.svg" alt="X" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-youtube.svg" alt="Youtube" />
-              </a>
             </div>
           </div>
-          <div class="footer-info__other">
+          <div class="footer-info">
+            <div class="footer-info__social">
+              <h3 class="footer-info__message">
+                Faucibus faucibus pellentesque dictum turpis. Id pellentesque
+                turpis massa a id iaculis lorem tur
+              </h3>
+              <div class="footer-info__sns">
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-facebook.svg" alt="Facebook" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-instagram.svg" alt="Instagram" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-x.svg" alt="X" />
+                </a>
+                <a class="footer-info__logo" href="">
+                  <img src="images/footer-info-youtube.svg" alt="Youtube" />
+                </a>
+              </div>
+            </div>
+
             <article class="footer-info__items">
               <h3 class="footer-info__title">Useful links</h3>
               <ul class="footer-info__links">
@@ -404,32 +522,20 @@
             </article>
             <article class="footer-info__items">
               <h3 class="footer-info__title">Download App</h3>
-              <div class="mobile-app__links">
-                <a class="mobile-app__link" href="#">
+              <div class="footer-info__apps">
+                <a class="footer-info__app" href="#">
                   <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-apple.svg"
-                    alt=""
+                    class="footer-info__badge"
+                    src="images/app-store-badge.svg"
+                    alt="Download on the App Store"
                   />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">Download on the</p>
-
-                    <p class="mobile-app__store">App Store</p>
-                  </div>
                 </a>
-                <a class="mobile-app__link" href="#">
+                <a class="footer-info__app" href="#">
                   <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-play.svg"
-                    alt=""
+                    class="footer-info__badge"
+                    src="images/google-play-badge.svg"
+                    alt="Get it on Google Play"
                   />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">GET IT ON</p>
-
-                    <p class="mobile-app__store">Google Play</p>
-                  </div>
                 </a>
               </div>
             </article>

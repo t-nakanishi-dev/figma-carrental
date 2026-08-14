@@ -246,3 +246,29 @@
 /* brand-list */
 .brand-list {
 }
+/* page-hero */
+.page-hero {
+}
+.page-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-block: 70px;
+}
+.page-hero__title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.breadcrumb {
+}
+.breadcrumb__list {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+}
+.breadcrumb__home {
+  color: #9b9b9b;
+}
+.breadcrumb__page {
+}
