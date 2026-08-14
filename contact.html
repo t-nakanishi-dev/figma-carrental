@@ -18,27 +18,29 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- header  -->
     <header class="header">
       <div class="container">
-        <a class="header__logo" href="index.html">
-          <img src="images/logo.svg" alt="Car Rental" />
-          <span>Car Rental</span>
-        </a>
-        <nav class="header__nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="vehicles.html">Vehicles</a></li>
-            <li><a href="details.html">Details</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="header__phone">
-          <img src="images/phone.svg" alt="Phone Number" />
-          <div class="header__phone-info">
-            <p>Need help?</p>
-            <a href="tel:+9962471680">+996 247-1680</a>
+        <div class="header__wrapper">
+          <a class="page__logo" href="index.html">
+            <img src="images/logo.svg" alt="" />
+            <span>Car Rental</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="vehicles.html">Vehicles</a></li>
+              <li><a href="details.html">Details</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <img src="images/phone.svg" alt="" />
+            <div class="header__phone-info">
+              <p>Need help?</p>
+              <a href="tel:+9962471680"> +996 247-1680 </a>
+            </div>
           </div>
         </div>
       </div>
@@ -52,7 +54,9 @@
             <h1 class="page-hero__title">Contact Us</h1>
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <ol class="breadcrumb__list">
-                <li class="breadcrumb__home"><a href="index.html">Home</a></li>
+                <li class="breadcrumb__home">
+                  <a href="index.html">Home / </a>
+                </li>
                 <li class="breadcrumb__page" aria-current="page">Contact Us</li>
               </ol>
             </nav>
@@ -64,61 +68,85 @@
       <section class="booking-section">
         <div class="container">
           <div class="booking-section__inner">
-            <!-- index.htmlで作成されたフォームを配置 -->
-            <div class="booking-card">
-              <form class="booking-form" action="#">
+            <div class="booking-card booking-card--purple">
+              <form class="booking-form" action="">
                 <h2 class="booking-form__title">Book your car</h2>
-                <div class="form-group">
-                  <label for="car-type">Car Type</label>
-                  <select id="car-type" name="car-type">
-                    <option value="">Select a car type</option>
-                    <option value="sedan">Sedan</option>
-                    <option value="suv">SUV</option>
-                    <option value="sports">Sports</option>
-                  </select>
+                <div class="booking-form__body">
+                  <div class="booking-form__fields">
+                    <div class="form-group">
+                      <label for="car-type">Car Type</label>
+                      <div class="select-wrapper">
+                        <select id="car-type" name="car-type">
+                          <option value="">Car Type</option>
+                          <option value="sedan">Sedan</option>
+                          <option value="suv">SUV</option>
+                          <option value="sports">Sports</option>
+                        </select>
+                        <img
+                          src="images/arrow-down.svg"
+                          alt=""
+                          class="select-arrow"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pickup-location">Place of Rental</label>
+                      <div class="select-wrapper">
+                        <select id="pickup-location" name="pickup-location">
+                          <option value="">Place of Rental</option>
+                          <option value="tokyo">Tokyo Station</option>
+                          <option value="shinjuku">Shinjuku</option>
+                          <option value="shibuya">Shibuya</option>
+                          <option value="haneda">Haneda Airport</option>
+                          <option value="narita">Narita Airport</option>
+                        </select>
+                        <img
+                          src="images/arrow-down.svg"
+                          alt=""
+                          class="select-arrow"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="return-location">Place of Return</label>
+                      <div class="select-wrapper">
+                        <select id="return-location" name="return-location">
+                          <option value="">Place of Return</option>
+                          <option value="tokyo">Tokyo Station</option>
+                          <option value="shinjuku">Shinjuku</option>
+                          <option value="shibuya">Shibuya</option>
+                          <option value="haneda">Haneda Airport</option>
+                          <option value="narita">Narita Airport</option>
+                        </select>
+                        <img
+                          src="images/arrow-down.svg"
+                          alt=""
+                          class="select-arrow"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="rental-date">Rental Date</label>
+                      <input type="date" id="rental-date" name="rental-date" />
+                    </div>
+                    <div class="form-group">
+                      <label for="return-date">Return date</label>
+                      <input type="date" id="return-date" name="return-date" />
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn--primary booking-form__button"
+                  >
+                    Book Now
+                  </button>
                 </div>
-                <div class="form-group">
-                  <label for="pickup-location">Place of Rental</label>
-                  <select id="pickup-location" name="pickup-location">
-                    <option value="">Select pickup location</option>
-                    <option value="tokyo">Tokyo Station</option>
-                    <option value="shinjuku">Shinjuku</option>
-                    <option value="shibuya">Shibuya</option>
-                    <option value="haneda">Haneda Airport</option>
-                    <option value="narita">Narita Airport</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="return-location">Place of Return</label>
-                  <select id="return-location" name="return-location">
-                    <option value="">Select return location</option>
-                    <option value="tokyo">Tokyo Station</option>
-                    <option value="shinjuku">Shinjuku</option>
-                    <option value="shibuya">Shibuya</option>
-                    <option value="haneda">Haneda Airport</option>
-                    <option value="narita">Narita Airport</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="rental-date">Rental Date</label>
-                  <input type="date" id="rental-date" name="rental-date" />
-                </div>
-                <div class="form-group">
-                  <label for="return-date">Return date</label>
-                  <input type="date" id="return-date" name="return-date" />
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn--primary booking-form__button"
-                >
-                  Book Now
-                </button>
               </form>
             </div>
 
             <!-- 横並びの画像エリア -->
             <div class="booking-section__image">
-              <img src="images/contact-hero.jpg" alt="Car rental service" />
+              <img src="images/contact-hero.webp" alt="Car rental service" />
             </div>
           </div>
         </div>
@@ -183,7 +211,6 @@
       <section class="blog">
         <div class="container">
           <div class="blog__inner">
-            <!-- 見出しは h2 に変更 -->
             <h2 class="blog__title">Latest blog posts & news</h2>
 
             <ul class="blog__list">
@@ -194,7 +221,7 @@
                     <div class="blog-card__image-wrapper">
                       <img
                         class="blog-card__img"
-                        src="images/blog-1.jpg"
+                        src="images/blog-1.webp"
                         alt="How To Choose The Right Car"
                       />
                     </div>
@@ -217,7 +244,7 @@
                     <div class="blog-card__image-wrapper">
                       <img
                         class="blog-card__img"
-                        src="images/blog-2.jpg"
+                        src="images/blog-2.webp"
                         alt="Which plan is right for me?"
                       />
                     </div>
@@ -240,7 +267,7 @@
                     <div class="blog-card__image-wrapper">
                       <img
                         class="blog-card__img"
-                        src="images/blog-3.jpg"
+                        src="images/blog-3.webp"
                         alt="Enjoy Speed, Choice & Total Control"
                       />
                     </div>
@@ -259,159 +286,165 @@
           </div>
         </div>
       </section>
-    <section class="partners">
-  <div class="container">
-    <ul class="partners__list">
-      <li class="partners__item">
-        <img src="images/partner-toyota.svg" alt="Toyota" />
-      </li>
-      <li class="partners__item">
-        <img src="images/partner-ford.svg" alt="Ford" />
-      </li>
-      <li class="partners__item">
-        <img src="images/partner-mercedes.svg" alt="Mercedes-Benz" />
-      </li>
-      <li class="partners__item">
-        <img src="images/partner-jeep.svg" alt="Jeep" />
-      </li>
-      <li class="partners__item">
-        <img src="images/partner-bmw.svg" alt="BMW" />
-      </li>
-      <li class="partners__item">
-        <img src="images/partner-audi.svg" alt="Audi" />
-      </li>
-    </ul>
-</section>
-</main>
-<footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer-guide">
-          <a class="footer-guide__logo" href="index.html">
-            <img src="images/logo.svg" alt="Car Rental" />
-            <span>Car Rental</span>
-          </a>
-          <ul class="footer-guide__list">
-            <li class="footer-guide__item">
-              <img
-                class="footer-guide__icon"
-                src="images/footer-guide-address.svg"
-                alt=""
-              />
-
-              <div class="footer-guide__content">
-                <p class="footer-guide__title">Address</p>
-                <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
-              </div>
-            </li>
-            <li class="footer-guide__item">
-              <a class="footer-guide__link" href="mailto:nwiger@yahoo.com">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-email.svg"
-                  alt=""
-                />
-                <div class="footer-guide__content">
-                  <p class="footer-guide__title">Email</p>
-                  <p class="footer-guide__info">nwiger@yahoo.com</p>
-                </div>
-              </a>
-            </li>
-            <li class="footer-guide__item">
-              <a class="footer-guide__link" href="tel:+5375476401">
-                <img
-                  class="footer-guide__icon"
-                  src="images/footer-guide-phone.svg"
-                  alt=""
-                />
-                <div class="footer-guide__content">
-                  <p class="footer-guide__title">Phone</p>
-                  <p class="footer-guide__info">+537 547-6401</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__inner">
+            <ul class="partners__list">
+              <li class="partners__item">
+                <img src="images/partner-toyota.svg" alt="Toyota" />
+              </li>
+              <li class="partners__item">
+                <img src="images/partner-ford.svg" alt="Ford" />
+              </li>
+              <li class="partners__item">
+                <img src="images/partner-mercedes.svg" alt="Mercedes-Benz" />
+              </li>
+              <li class="partners__item">
+                <img src="images/partner-jeep.svg" alt="Jeep" />
+              </li>
+              <li class="partners__item">
+                <img src="images/partner-bmw.svg" alt="BMW" />
+              </li>
+              <li class="partners__item">
+                <img src="images/partner-audi.svg" alt="Audi" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-info">
-          <div class="footer-info__social">
-            <h3 class="footer-info__message">
-              Faucibus faucibus pellentesque dictum turpis. Id pellentesque
-              turpis massa a id iaculis lorem tur
-            </h3>
-            <div class="footer-info__sns">
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-facebook.svg" alt="Facebook" />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <div class="footer-guide">
+              <a class="page__logo" href="index.html">
+                <img src="images/logo.svg" alt="" />
+                <span>Car Rental</span>
               </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-instagram.svg" alt="Instagram" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-x.svg" alt="X" />
-              </a>
-              <a class="footer-info__logo" href="">
-                <img src="images/footer-info-youtube.svg" alt="Youtube" />
-              </a>
+
+              <div class="footer-guide__item">
+                <a
+                  class="footer-guide__link"
+                  href="https://www.google.com/maps/search/?api=1&query=Oxford+Ave.+Cary,+NC+27511"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="footer-guide__icon-wrapper">
+                    <img
+                      class="footer-guide__icon"
+                      src="images/footer-guide-address.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="footer-guide__content">
+                    <p class="footer-guide__title">Address</p>
+                    <p class="footer-guide__info">Oxford Ave. Cary, NC 27511</p>
+                  </div>
+                </a>
+              </div>
+              <div class="footer-guide__item">
+                <a class="footer-guide__link" href="mailto:nwiger@yahoo.com">
+                  <div class="footer-guide__icon-wrapper">
+                    <img
+                      class="footer-guide__icon"
+                      src="images/footer-guide-email.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="footer-guide__content">
+                    <p class="footer-guide__title">Email</p>
+                    <p class="footer-guide__info">nwiger@yahoo.com</p>
+                  </div>
+                </a>
+              </div>
+              <div class="footer-guide__item">
+                <a class="footer-guide__link" href="tel:+5375476401">
+                  <div class="footer-guide__icon-wrapper">
+                    <img
+                      class="footer-guide__icon"
+                      src="images/footer-guide-phone.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="footer-guide__content">
+                    <p class="footer-guide__title">Phone</p>
+                    <p class="footer-guide__info">+537 547-6401</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="footer-info__social">
+                <h3 class="footer-info__message">
+                  Faucibus faucibus pellentesque dictum turpis. Id pellentesque
+                  turpis massa a id iaculis lorem tur
+                </h3>
+                <div class="footer-info__sns">
+                  <a class="footer-info__logo" href="">
+                    <img src="images/footer-info-facebook.svg" alt="Facebook" />
+                  </a>
+                  <a class="footer-info__logo" href="">
+                    <img
+                      src="images/footer-info-instagram.svg"
+                      alt="Instagram"
+                    />
+                  </a>
+                  <a class="footer-info__logo" href="">
+                    <img src="images/footer-info-x.svg" alt="X" />
+                  </a>
+                  <a class="footer-info__logo" href="">
+                    <img src="images/footer-info-youtube.svg" alt="Youtube" />
+                  </a>
+                </div>
+              </div>
+
+              <article class="footer-info__items">
+                <h3 class="footer-info__title">Useful links</h3>
+                <ul class="footer-info__links">
+                  <li><a class="footer-info__link" href="">About us</a></li>
+                  <li><a class="footer-info__link" href="">Contact us</a></li>
+                  <li><a class="footer-info__link" href="">Gallery</a></li>
+                  <li><a class="footer-info__link" href="">Blog</a></li>
+                  <li><a class="footer-info__link" href="">F.A.Q</a></li>
+                </ul>
+              </article>
+              <article class="footer-info__items">
+                <h3 class="footer-info__title">Vehicles</h3>
+                <ul class="footer-info__links">
+                  <li><a class="footer-info__link" href="">Sedan</a></li>
+                  <li><a class="footer-info__link" href="">Cabriolet</a></li>
+                  <li><a class="footer-info__link" href="">Pickup</a></li>
+                  <li><a class="footer-info__link" href="">Minivan</a></li>
+                  <li><a class="footer-info__link" href="">SUV</a></li>
+                </ul>
+              </article>
+              <article class="footer-info__items">
+                <h3 class="footer-info__title">Download App</h3>
+                <div class="footer-info__apps">
+                  <a class="footer-info__app" href="#">
+                    <img
+                      class="footer-info__badge"
+                      src="images/app-store-badge.svg"
+                      alt="Download on the App Store"
+                    />
+                  </a>
+                  <a class="footer-info__app" href="#">
+                    <img
+                      class="footer-info__badge"
+                      src="images/google-play-badge.svg"
+                      alt="Get it on Google Play"
+                    />
+                  </a>
+                </div>
+              </article>
             </div>
           </div>
-          <div class="footer-info__other">
-            <article class="footer-info__items">
-              <h3 class="footer-info__title">Useful links</h3>
-              <ul class="footer-info__links">
-                <li><a class="footer-info__link" href="">About us</a></li>
-                <li><a class="footer-info__link" href="">Contact us</a></li>
-                <li><a class="footer-info__link" href="">Gallery</a></li>
-                <li><a class="footer-info__link" href="">Blog</a></li>
-                <li><a class="footer-info__link" href="">F.A.Q</a></li>
-              </ul>
-            </article>
-            <article class="footer-info__items">
-              <h3 class="footer-info__title">Vehicles</h3>
-              <ul class="footer-info__links">
-                <li><a class="footer-info__link" href="">Sedan</a></li>
-                <li><a class="footer-info__link" href="">Cabriolet</a></li>
-                <li><a class="footer-info__link" href="">Pickup</a></li>
-                <li><a class="footer-info__link" href="">Minivan</a></li>
-                <li><a class="footer-info__link" href="">SUV</a></li>
-              </ul>
-            </article>
-            <article class="footer-info__items">
-              <h3 class="footer-info__title">Download App</h3>
-              <div class="mobile-app__links">
-                <a class="mobile-app__link" href="#">
-                  <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-apple.svg"
-                    alt=""
-                  />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">Download on the</p>
-
-                    <p class="mobile-app__store">App Store</p>
-                  </div>
-                </a>
-                <a class="mobile-app__link" href="#">
-                  <img
-                    class="mobile-app__icon"
-                    src="images/mobile-app-play.svg"
-                    alt=""
-                  />
-
-                  <div class="mobile-app__info">
-                    <p class="mobile-app__subtitle">GET IT ON</p>
-
-                    <p class="mobile-app__store">Google Play</p>
-                  </div>
-                </a>
-              </div>
-            </article>
-          </div>
+          <small class="footer__copyright">
+            © Copyright Car Rental 2024. Design by Figma. guru
+          </small>
         </div>
-        <small class="footer__copyright">
-          © Copyright Car Rental 2024. Design by Figma. guru
-        </small>
       </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>

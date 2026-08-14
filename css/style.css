@@ -981,5 +981,118 @@
   display: inline-flex;
   width: fit-content;
 }
-.cta-banner__image {
+/* booking-section  */
+.booking-section {
+}
+.booking-section__inner {
+  padding-block: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/* Contactページ用：紫背景の予約フォーム */
+.booking-card--purple {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 40px;
+  border-radius: 20px;
+  background-color: var(--purple-color);
+}
+.booking-card--purple .booking-form__title {
+  color: #fff;
+}
+.booking-card--purple select,
+.booking-card--purple input[type="date"] {
+  background-color: #694be3;
+  color: var(--white-color);
+}
+.booking-card--purple .select-arrow {
+  filter: brightness(0) invert(1);
+}
+.booking-card--purple input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* contact-info */
+.contact-info {
+}
+.contact-info__inner {
+  padding-block: var(--section-padding-md);
+}
+.contact-info__list {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info__item {
+  display: flex;
+  gap: 12px;
+}
+.contact-info__img {
+  width: 64px;
+  height: 64px;
+}
+.contact-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info__label {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+.contact-info__value {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+/* blog  */
+.blog {
+}
+.blog__inner {
+  padding-block: var(--section-padding-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.blog__title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.blog__list {
+  display: flex;
+  gap: 24px;
+}
+.blog__item {
+}
+.blog-card {
+}
+.blog-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-card__image-wrapper {
+}
+.blog-card__img {
+}
+.blog-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.blog-card__meta {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
 }
