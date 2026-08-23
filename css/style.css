@@ -245,7 +245,7 @@
   max-width: 536px;
   font-size: 16px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 .mobile-app__links {
   display: flex;
@@ -852,8 +852,18 @@
 .booking-section__inner {
   padding-block: 60px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 24px;
+}
+.booking-section__image {
+  flex: 1;
+}
+
+.booking-section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 /* Contactページ用：紫背景の予約フォーム */
 .booking-card--purple {
@@ -954,14 +964,68 @@
   .page__logo {
     flex-shrink: 0;
   }
+  .header {
+    position: relative;
+    z-index: 100;
+  }
   .header__nav,
   .header__phone {
     display: none;
   }
+  .header__nav.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 24px;
+    z-index: 20;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__nav-list a {
+    display: block;
+    padding-block: 8px;
+  }
   .header__menu {
     display: block;
-    flex-shrink: 0;
-    margin-left: auto;
+    background-color: #fff;
+    border: none;
+    position: relative;
+    z-index: 30;
+  }
+  .header__menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    transition: 0.3s;
+  }
+  .header__menu span + span {
+    margin-top: 5px;
+  }
+  .header__menu.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .header__menu.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+  .header__menu.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .header__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+  }
+
+  .header__overlay.is-open {
+    display: block;
   }
   /* home hero */
   .hero {

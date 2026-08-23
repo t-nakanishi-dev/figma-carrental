@@ -71,6 +71,20 @@
 .header__menu {
   display: none;
 }
+
+.header__menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+}
+
+.header__menu span + span {
+  margin-top: 5px;
+}
+.header__overlay {
+  display: none;
+}
 /* footer */
 .footer {
   padding-block: var(--section-padding-md) 40px;
