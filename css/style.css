@@ -237,9 +237,9 @@
   gap: 60px;
 }
 .mobile-app__title {
-  max-width: 314px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
+  line-height: 1.2;
 }
 .mobile-app__description {
   max-width: 536px;
@@ -1039,18 +1039,19 @@
     flex-direction: column;
     gap: 40px;
   }
-
+  .hero__content {
+    padding-top: 24px;
+    align-items: center;
+    text-align: center;
+  }
   .hero__title {
     width: 100%;
     font-size: 40px;
   }
-
   .hero__description {
     width: 100%;
   }
-  .hero__content {
-    padding-top: 24px;
-  }
+
   /* booking */
   .booking-card {
     width: 100%;
@@ -1074,7 +1075,11 @@
     gap: 40px;
     align-items: stretch;
   }
-
+  .about-feature__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .about-feature__list {
     width: 100%;
   }
@@ -1092,9 +1097,11 @@
     width: 100%;
     font-size: 36px;
   }
-
   .vehicle-list__items {
     grid-template-columns: 1fr;
+  }
+  .vehicle-card__image {
+    align-self: center;
   }
   .vehicle-card__info {
     display: flex;
@@ -1126,7 +1133,7 @@
   }
   .mobile-app__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     align-items: center;
     text-align: center;
     gap: 30px;
@@ -1134,11 +1141,13 @@
   }
   .mobile-app__title {
     width: 100%;
+    max-width: 250px;
     font-size: 40px;
     line-height: 1;
   }
   .mobile-app__description {
     width: 100%;
+    max-width: 250px;
     line-height: 1.2;
   }
   .mobile-app__links {
@@ -1148,6 +1157,7 @@
   }
   .mobile-app__image {
     position: absolute;
+    z-index: 1;
     left: 50%;
     bottom: 40px;
     transform: translateX(-50%);
@@ -1162,6 +1172,8 @@
   }
   .cta-banner__content {
     gap: 40px;
+    align-items: center;
+    text-align: center;
   }
   .cta-banner__title {
     width: 100%;
@@ -1169,6 +1181,9 @@
   }
   .cta-banner__description {
     width: 100%;
+  }
+  .cta-banner__image {
+    align-self: center;
   }
   /* footer */
   .footer {
@@ -1259,6 +1274,11 @@
     width: 100%;
   }
 
+  .vehicle-details__right {
+    padding-top: var(--section-padding-md);
+    align-items: center;
+  }
+
   .vehicle-details__info {
     align-items: flex-start;
   }
@@ -1273,13 +1293,8 @@
   }
 
   .vehicle-details__thumbnails {
-    gap: 12px;
+    justify-content: center;
   }
-
-  .vehicle-details__thumbnail {
-    flex: 1;
-  }
-
   .vehicle-details__spec-items {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1507,6 +1522,7 @@
 
   .about-mobile-app__title {
     width: 100%;
+    max-width: 250px;
     font-size: 40px;
     color: var(--black-color);
     white-space: normal;
@@ -1515,7 +1531,7 @@
 
   .about-mobile-app__desc {
     width: 100%;
-    max-width: none;
+    max-width: 250px;
     color: var(--black-color);
     line-height: 1.2;
   }
@@ -1661,11 +1677,13 @@
     flex-direction: column;
     gap: 24px;
   }
-
   .booking-card--purple {
     width: 100%;
     padding: 24px;
     border-radius: 16px;
+  }
+  .booking-section__image {
+    padding-top: var(--section-padding-md);
   }
   /* contact-info */
   .contact-info__inner {
